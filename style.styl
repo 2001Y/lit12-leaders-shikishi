@@ -15,6 +15,9 @@ body
 .open
     #base
         animation fadeOut .3s ease-in forwards
+iframe
+    width 100%
+    height 100%
 img
     float: left;
     display: block;
@@ -23,14 +26,12 @@ img
     border-radius 50%
     transform:rotate(-45deg)
     transform-origin 50% 50%
-    will-change transform
+    will-change transform opacity
     transform:scale(0) rotate(-45deg);
     opacity 0
     transition .3s ease-in
 .img
     transition none !important
-//    &:nth-child(2n)
-//        opacity .5
 #base
     width var(--sizeSize)
     height var(--sizeSize)

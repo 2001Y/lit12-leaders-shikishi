@@ -16,21 +16,23 @@ function Fscroll(){
     }, 300);
 }
 function main(){
+    window.addEventListener('touchmove',img);
+    window.addEventListener('scroll',img);
+}
+function img(){
     let w = window.innerWidth/2,
         h = window.innerHeight/2;
-    window.onscroll = function(){
-        var el = document.querySelectorAll('img');
-        for(var i=0; i<el.length; i++) {
-            var centerEle = el[i],
-                center = centerEle.getBoundingClientRect(),
-                centerX = (center.left + center.right)/2,
-                centerH = (center.top + center.bottom)/2,
-                distance = Math.sqrt(Math.pow(w - centerX,2) + Math.pow(h - centerH,2))*2,
-                centerSize = 1.1-distance/Math.max(window.innerWidth,window.innerHeight);
-            centerEle.style.transform = 'scale(' + centerSize + ') rotate(-45deg)';
-            centerEle.style.opacity = centerSize;
-        }
-    };
+    var el = document.querySelectorAll('img');
+    for(var i=0; i<el.length; i++) {
+        var centerEle = el[i],
+            center = centerEle.getBoundingClientRect(),
+            centerX = (center.left + center.right)/2,
+            centerH = (center.top + center.bottom)/2,
+            distance = Math.sqrt(Math.pow(w - centerX,2) + Math.pow(h - centerH,2))*2,
+            centerSize = 1.1-distance/Math.max(window.innerWidth,window.innerHeight);
+        centerEle.style.transform = 'scale(' + centerSize + ') rotate(-45deg)';
+        centerEle.style.opacity = centerSize;
+    }
 }
 
 var el = document.querySelectorAll('a');
