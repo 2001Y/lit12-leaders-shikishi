@@ -1,0 +1,54 @@
+*
+    font-family inherit,sans-serif
+    font-size inherit
+    margin 0
+    padding 0
+    border 0
+    box-sizing border-box
+#Shikishi
+    --size: 20vmax;
+    --sizeSize: calc(var(--size)*7)
+#top
+    --size: 20vmax;
+body
+    background #000
+.open
+    #base
+        animation fadeOut .3s ease-in forwards
+img
+    float: left;
+    display: block;
+    width var(--size)
+    height var(--size)
+    border-radius 50%
+    transform:rotate(-45deg)
+    transform-origin 50% 50%
+    will-change transform
+    transform:scale(0) rotate(-45deg);
+    opacity 0
+    transition .3s ease-in
+.img
+    transition none !important
+//    &:nth-child(2n)
+//        opacity .5
+#base
+    width var(--sizeSize)
+    height var(--sizeSize)
+    min-width var(--sizeSize)
+    min-height var(--sizeSize)
+    transform rotate(45deg)
+html,body,#baseBase
+    display inline
+    width 500%
+    height 500%
+#baseBase
+    display: flex;
+    justify-content: center;
+    align-items: center;
+@keyframes fadeOut
+    0%
+        opacity: 1
+        transform:scale(1) rotate(45deg);
+    100%
+        opacity 0
+        transform:scale(2) rotate(45deg);

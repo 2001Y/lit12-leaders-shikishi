@@ -1,1 +1,0 @@
-# lit12-leaders-shikishi
