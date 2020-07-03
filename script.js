@@ -4,8 +4,8 @@ window.addEventListener("pageshow",Fscroll);
 
 function Fscroll(){
     document.body.classList.remove('open');
-    let width = document.documentElement.scrollWidth/2 - window.innerWidth/2,
-        height = document.documentElement.scrollHeight/2 - window.innerHeight/2;
+    let width = document.documentElement.scrollWidth/2 - document.documentElement.clientWidth/2,
+        height = document.documentElement.scrollHeight/2 - document.documentElement.clientHeight/2;
     window.scrollTo(width,height);
     main();
     setTimeout(function(){
