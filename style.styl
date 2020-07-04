@@ -1,5 +1,5 @@
 *
-    font-family inherit,sans-serif
+    font-family sans-serif
     font-size inherit
     margin 0
     padding 0
@@ -7,17 +7,22 @@
     box-sizing border-box
 #Shikishi
     --size: 20vmax;
-    --sizeSize: calc(var(--size)*7)
+    --sizeSize: calc(var(--size)*5)
 #top
     --size: 20vmax;
+#homeLink
+    position relative
+    &:after
+        content "◀︎"
+        position absolute
+        top 50%
+        left 50%
+        transform scale(-50%,-50%)
 body
     background #000
 .open
     #base
         animation fadeOut .3s ease-in forwards
-iframe
-    width 100%
-    height 100%
 img
     float: left;
     display: block;
@@ -30,8 +35,14 @@ img
     transform:scale(0) rotate(-45deg);
     opacity 0
     transition .3s ease-in
+    &:hover
+        opacity .4 !important
 .img
     transition none !important
+#homeC:hover
+    content: url("chatsumi-hover.jpg")
+#homeN:hover
+    content: url("nino-hover.jpg")
 #base
     width var(--sizeSize)
     height var(--sizeSize)
@@ -46,6 +57,14 @@ html,body,#baseBase
     display: flex;
     justify-content: center;
     align-items: center;
+footer
+    font-size 1.5vmax
+    position fixed
+    bottom 30px
+    left 50%
+    transform: translateX(-50%);
+    opacity .5
+    
 @keyframes fadeOut
     0%
         opacity: 1
