@@ -7,11 +7,11 @@
   box-sizing: border-box;
 }
 #Shikishi {
-  --size: 20vmax;
+  --size: 23vmax;
   --sizeSize: calc(var(--size) * 5);
 }
 #top {
-  --size: 20vmax;
+  --size: 23vmax;
 }
 #homeLink {
   position: relative;
