@@ -7,13 +7,13 @@ function Fscroll(){
     let width = document.documentElement.scrollWidth/2 - document.documentElement.clientWidth/2,
         height = document.documentElement.scrollHeight/2 - document.documentElement.clientHeight/2;
     window.scrollTo(width,height);
-    main();
     setTimeout(function(){
         var el = document.querySelectorAll('img');
         for(var i=0; i<el.length; i++) {
             el[i].classList.toggle('img');
         }
     }, 300);
+    main();
 }
 function main(){
     window.addEventListener('touchmove',img);
