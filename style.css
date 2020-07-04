@@ -64,7 +64,6 @@ img:hover {
 html,
 body,
 #baseBase {
-  display: inline;
   width: 500%;
   height: 500%;
 }
