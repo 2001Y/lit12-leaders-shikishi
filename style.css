@@ -73,6 +73,7 @@ body,
   align-items: center;
 }
 footer {
+  color: #fff;
   font-size: 1.5vmax;
   position: fixed;
   bottom: 30px;
