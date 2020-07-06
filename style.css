@@ -64,8 +64,8 @@ img:hover {
 html,
 body,
 #baseBase {
-  width: 500%;
-  height: 500%;
+  width: 200vmax;
+  height: 200vmax;
 }
 #baseBase {
   display: flex;
