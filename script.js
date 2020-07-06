@@ -13,7 +13,7 @@ function Fscroll(){
             el[i].classList.toggle('img');
         }
     }, 300);
-    main();
+    main();img();
 }
 function main(){
     window.addEventListener('touchmove',img);
