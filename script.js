@@ -20,7 +20,7 @@ setTimeout(function(){
     for(let i=0; i<el.length; i++){
         el[i].classList.toggle("img");
     }
-    img();
+    scroll();
 },300);
 
 function scroll(){
