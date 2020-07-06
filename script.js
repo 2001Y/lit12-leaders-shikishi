@@ -27,6 +27,7 @@ function scroll(){
     let width = document.documentElement.scrollWidth/2 - document.documentElement.clientWidth/2,
         height = document.documentElement.scrollHeight/2 - document.documentElement.clientHeight/2;
     window.scrollTo(width,height);
+    img();
 }
 function img(){
     let w = window.innerWidth/2,
