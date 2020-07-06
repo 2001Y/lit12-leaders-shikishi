@@ -8,12 +8,13 @@ function Fscroll(){
         height = document.documentElement.scrollHeight/2 - document.documentElement.clientHeight/2;
     window.scrollTo(width,height);
     setTimeout(function(){
+        img();
         var el = document.querySelectorAll('img');
         for(var i=0; i<el.length; i++) {
             el[i].classList.toggle('img');
         }
     }, 300);
-    main();img();
+    main();
 }
 function main(){
     window.addEventListener('touchmove',img);

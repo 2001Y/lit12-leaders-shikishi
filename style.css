@@ -74,9 +74,9 @@ body,
 }
 footer {
   color: #fff;
-  font-size: 1.5vmax;
+  font-size: 2vmax;
   position: fixed;
-  bottom: 30px;
+  bottom: 2vmax;
   left: 50%;
   transform: translateX(-50%);
   opacity: 0.5;
