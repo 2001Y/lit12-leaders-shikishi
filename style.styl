@@ -15,6 +15,23 @@ body
 .open
     #base
         animation fadeOut .3s ease-in forwards
+#back
+    font-size 3vmax
+    width 7vmax
+    height 7vmax
+    color #000
+    background #fff
+    border-radius 50%
+    position fixed
+    bottom 6vmax
+    left 50%
+    transform translateX(-50%)
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration none
+    box-shadow: 0 25px 25px 0 rgba(0, 0, 0, .7);
+    animation fadeIn .3s ease-in forwards
 img
     float: left;
     display: block;
@@ -31,10 +48,6 @@ img
         opacity .4 !important
 .img
     transition none !important
-#homeC:hover
-    content: url("chatsumi-hover.jpg")
-#homeN:hover
-    content: url("nino-hover.jpg")
 #base
     width var(--sizeSize)
     height var(--sizeSize)

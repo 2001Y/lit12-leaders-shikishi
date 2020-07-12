@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/single.css">
+        <title>Watch</title>
+    </head>
+
+    <body>
+        <iframe src="pochako/index.html"></iframe>
+        <a id="back" href="/nino.html">◀︎</a>
+    </body>
+    <script>
+        let aEl = document.querySelectorAll("a");
+        for(let i=0; i<aEl.length; i++){
+            aEl[i].onclick = function(){
+                document.body.classList.add("open");
+                let url = this.href;
+                setTimeout(function(){
+                    window.location.href = url;
+                },100);
+                return false;
+            }
+        }
+    </script>
+</html>
