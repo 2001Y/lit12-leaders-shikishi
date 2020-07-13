@@ -32,6 +32,9 @@ body
     text-decoration none
     box-shadow: 0 25px 25px 0 rgba(0, 0, 0, .7);
     animation fadeIn .3s ease-in forwards
+    transition opacity .3s
+    &:hover
+        opacity .4
 img
     float: left;
     display: block;
@@ -44,8 +47,10 @@ img
     transform:scale(0) rotate(-45deg);
     opacity 0
     transition .3s ease-in
+a
+    transition opacity .3s
     &:hover
-        opacity .4 !important
+        opacity .4
 .img
     transition none !important
 #base

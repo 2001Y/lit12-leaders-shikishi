@@ -36,6 +36,10 @@ body {
   text-decoration: none;
   box-shadow: 0 25px 25px 0 rgba(0,0,0,0.7);
   animation: fadeIn 0.3s ease-in forwards;
+  transition: opacity 0.3s;
+}
+#back:hover {
+  opacity: 0.4;
 }
 img {
   float: left;
@@ -50,8 +54,11 @@ img {
   opacity: 0;
   transition: 0.3s ease-in;
 }
-img:hover {
-  opacity: 0.4 !important;
+a {
+  transition: opacity 0.3s;
+}
+a:hover {
+  opacity: 0.4;
 }
 .img {
   transition: none !important;
