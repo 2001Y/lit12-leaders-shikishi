@@ -22,7 +22,7 @@ function img(){
             center = centerEle.getBoundingClientRect(),
             centerX = (center.left + center.right)/2,
             distance = Math.pow(w - centerX,2),
-            centerSize = 1-distance/window.innerWidth/100;
+            centerSize = 1-distance/window.innerWidth/80;
         centerEle.style.opacity = centerSize;
     }
 }img();
